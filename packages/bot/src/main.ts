@@ -1,6 +1,8 @@
+// require('./prototype.spawn')();
+//require('prototype.creep')();
+//require('prototype.room')();
 import './polyfills';
-
-import { Kernel, MemoryValue, PID, Priority, PriorityScheduler } from 'os';
+import { Kernel, MemoryValue, PID, Priority, PriorityScheduler } from 'oscore';
 import { ErrorMapper } from './utils/ErrorMapper';
 import {
   getMemoryRef,
@@ -17,6 +19,7 @@ import { wrapWithMemoryHack } from './utils/memory-hack';
 declare const global: Record<string, any>;
 
 const kernelLogger = createLogger('kernel');
+
 const kernel = new Kernel({
   registry,
   scheduler: new PriorityScheduler(0 as Priority),
@@ -102,6 +105,8 @@ export const loop = ErrorMapper.wrapLoop(
 
     kernel.run();
 
+    const  tower = Game.getObjectById("62f446749fb8831de0634625" as any);
+   // console.log (JSON.stringify(tower));
     // Automatically delete memory of missing creeps
     for (const name in Memory.creeps) {
       if (!(name in Game.creeps)) {

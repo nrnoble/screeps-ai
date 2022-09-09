@@ -8,7 +8,7 @@ Assuming that the `./processes` module exports all your processes as a record,
 we extend the global `OSRegistry` type with those, so that our Kernel knows about them.
 
 ```ts
-import { MemoryValue, Process } from 'os';
+import { MemoryValue, Process } from 'oscore';
 import * as registry from './processes';
 
 // Verify that registry has the correct type.
@@ -22,18 +22,18 @@ declare global {
 }
 
 export { registry };
-
 ```
 
 We can now instantiate our `Kernel` and run it in the loop.
+
 ```ts
 const kernel = new Kernel(
   registry,
   new RoundRobinScheduler(() => Game.cpu.tickLimit * 0.8 - Game.cpu.getUsed()),
-  (key, value) => getMemoryRef(`kernel:${key}`, value),
+  (key, value) => getMemoryRef(`kernel:${key}`, value)
 );
 
 export const loop = () => {
   kernel.run();
-}
+};
 ```

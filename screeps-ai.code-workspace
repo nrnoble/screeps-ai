@@ -9,7 +9,7 @@
       "path": "packages/bot"
     },
     {
-      "name": "OS",
+      "name": "oscore",
       "path": "packages/os"
     }
   ],

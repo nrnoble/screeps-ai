@@ -1,4 +1,4 @@
-import { MemoryValue, Process } from 'os';
+import { MemoryValue, Process } from 'oscore';
 import * as registry from './processes';
 
 // Verify that registry has the correct type.

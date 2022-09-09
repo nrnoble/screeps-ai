@@ -4,7 +4,10 @@
     {
       "label": "deploy:watch",
       "command": "yarn",
-      "args": ["deploy:private", "--watch"],
+      "args": [
+        "deploy:private",
+        "--watch"
+      ],
       "isBackground": true,
       "problemMatcher": {
         "owner": "typescript",
@@ -23,6 +26,14 @@
           "endsPattern": "created dist/main.js in.*"
         }
       },
+      "group": "build"
+    },
+    {
+      "type": "npm",
+      "script": "deploy:mmo",
+      "problemMatcher": [],
+      "label": "npm: deploy:mmo",
+      "detail": "yarn build --environment DEST:mmo",
       "group": {
         "kind": "build",
         "isDefault": true

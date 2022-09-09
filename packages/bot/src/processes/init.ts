@@ -1,4 +1,4 @@
-import { createProcess, sleep } from 'os';
+import { createProcess, sleep } from 'oscore';
 import { createLogger } from '../library';
 import { ensureChild } from '../library';
 
@@ -8,6 +8,7 @@ export const init = createProcess(function* () {
   logger.info('Initializing');
   for (;;) {
     yield* ensureChild('creepManager');
+    yield* ensureChild('roomManager');
     yield* ensureChild('spawnManager');
     for (const room of Object.values(Game.rooms)) {
       const spawns = room.find(FIND_MY_SPAWNS);

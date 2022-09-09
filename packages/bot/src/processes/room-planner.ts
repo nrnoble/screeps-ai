@@ -1,4 +1,4 @@
-import { Thread, sleep, createProcess } from 'os';
+import { Thread, sleep, createProcess } from 'oscore';
 import { expandPosition } from '../utils';
 
 export const roomPlanner = createProcess(function* (roomName: string) {
@@ -125,17 +125,17 @@ export const roomPlanner = createProcess(function* (roomName: string) {
 
   for (;;) {
     yield* sleep();
-    drawRoomVisuals(paths, containers);
+ //   drawRoomVisuals(paths, containers);
 
-    const containerSites = containers.filter(
-      (pos) => room().lookForAt(LOOK_STRUCTURES, pos).length === 0
-    );
-    if (containerSites.length > 0) {
-      containerSites.forEach((site) =>
-        room().createConstructionSite(site.x, site.y, STRUCTURE_CONTAINER)
-      );
-      continue;
-    }
+    // const containerSites = containers.filter(
+    //   (pos) => room().lookForAt(LOOK_STRUCTURES, pos).length === 0
+    // );
+    // if (containerSites.length > 0) {
+    //   containerSites.forEach((site) =>
+    //     room().createConstructionSite(site.x, site.y, STRUCTURE_CONTAINER)
+    //   );
+    //   continue;
+    // }
 
     if (room().find(FIND_CONSTRUCTION_SITES).length > 0) {
       continue;
