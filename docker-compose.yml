@@ -9,7 +9,7 @@ services:
     environment:
       MONGO_HOST: mongo
       REDIS_HOST: redis
-      STEAM_KEY: ${71d1b48c-5898-4784-9077-c7ee296033fd:?"Missing steam key"}
+      STEAM_KEY: ${STEAM_KEY:?"Missing steam key"}
     restart: unless-stopped
     depends_on:
       - mongo
