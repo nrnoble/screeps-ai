@@ -3,7 +3,7 @@
   "version": "0.0.1",
   "scripts": {
     "build": "rollup -c",
-    "deploy:mmo": "yarn build --environment DEST:mmo",
+    "deploy:mmo": "yarn build --environment DEST:main",
     "deploy:private": "yarn build --environment DEST:private"
   },
   "dependencies": {

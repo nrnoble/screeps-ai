@@ -1,3 +1,6 @@
+// Oct 20th, 2022 projected date for reaching level 8
+
+
 // require('./prototype.spawn')();
 //require('prototype.creep')();
 //require('prototype.room')();

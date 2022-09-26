@@ -3,7 +3,7 @@ import { expandPosition, isDefined } from '../utils';
 
 
 const firstSpawn = Game.spawns.Spawn1!;
-//const workerCount = firstSpawn.memory.workerCount;abc
+//const workerCount = firstSpawn.memory.workerCount;
 const workerCount = 0;
 const upgraderCount = 1;
 const haulerCount = 2;
