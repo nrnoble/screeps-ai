@@ -1096,13 +1096,13 @@ __metadata:
   linkType: hard
 
 "@yarn-tool/resolve-package@npm:^1.0.40":
-  version: 1.0.46
-  resolution: "@yarn-tool/resolve-package@npm:1.0.46"
+  version: 1.0.47
+  resolution: "@yarn-tool/resolve-package@npm:1.0.47"
   dependencies:
     pkg-dir: "npm:< 6 >= 5"
-    tslib: "npm:^2.3.1"
-    upath2: "npm:^3.1.12"
-  checksum: 49ece5c526d2bac1f896f360b6a736bf4da6f2489aaa3ea8a5dee5446eecdd9d6697c96a080060ece6d8a4b11b9f7816546ae8d2f42df45400f2fe1e2399383a
+    tslib: "npm:^2"
+    upath2: "npm:^3.1.13"
+  checksum: 37b5c848a52052fabeafc5beb6f7000760ce6716981b1c28e24c2395971a0afc69a1b56b015931d234adb65f18d9dcf1dc634bc98a4172083a2bd3244a9d725b
   languageName: node
   linkType: hard
 
@@ -4089,12 +4089,12 @@ __metadata:
   languageName: node
   linkType: hard
 
-"path-is-network-drive@npm:^1.0.13":
-  version: 1.0.13
-  resolution: "path-is-network-drive@npm:1.0.13"
+"path-is-network-drive@npm:^1.0.16":
+  version: 1.0.16
+  resolution: "path-is-network-drive@npm:1.0.16"
   dependencies:
-    tslib: "npm:^2.3.1"
-  checksum: 4d1b7bda5e4cfa0f9191c432c02ef65dbefc38c7477b407761bace4d9617501f7282781e31bfa64ddbe3f9aaa8f182c776d1f42425021499526559243cea5729
+    tslib: "npm:^2"
+  checksum: c03a34e01da7d373023ebe5ba1ca6838fcb01f5b851cfe38e0134a0c6fecca8e1f55d5e48baf2e997a15d366321f8dbee8ba10a8e16e81459117347b7bc9c673
   languageName: node
   linkType: hard
 
@@ -4112,12 +4112,12 @@ __metadata:
   languageName: node
   linkType: hard
 
-"path-strip-sep@npm:^1.0.10":
-  version: 1.0.10
-  resolution: "path-strip-sep@npm:1.0.10"
+"path-strip-sep@npm:^1.0.13":
+  version: 1.0.13
+  resolution: "path-strip-sep@npm:1.0.13"
   dependencies:
-    tslib: "npm:^2.3.1"
-  checksum: 15965dfa5044fc6b9b23d7114c927126fd9acc6d2ac06ee804b49cde30c62e223aa4d2b58ee05c5b7cda94f0dd8a916037cd00bcc97c4bc6cc4ad3482709e6ba
+    tslib: "npm:^2"
+  checksum: 047c4f8937119efa5f34b5ac25003a577b842bb244eaf8066a6f9ea463b735e5589bf5c959ee73432d0487915cfb5ae9525652ed583f90b83f6e148bde876f91
   languageName: node
   linkType: hard
 
@@ -4933,7 +4933,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"tslib@npm:^2.3.1":
+"tslib@npm:^2, tslib@npm:^2.3.1":
   version: 2.4.0
   resolution: "tslib@npm:2.4.0"
   checksum: 022a70708abbc3491734959effd9a87e6e0af5932b61d0c9f1d07b8b80cabbbfc9fc9e9c0fe86e5ab2d32d766ae30117edf00b02d170ff255ab7e60361a4b711
@@ -5071,16 +5071,15 @@ __metadata:
   languageName: node
   linkType: hard
 
-"upath2@npm:^3.1.12":
-  version: 3.1.12
-  resolution: "upath2@npm:3.1.12"
+"upath2@npm:^3.1.13":
+  version: 3.1.15
+  resolution: "upath2@npm:3.1.15"
   dependencies:
-    path-is-network-drive: "npm:^1.0.13"
-    path-strip-sep: "npm:^1.0.10"
-    tslib: "npm:^2.3.1"
-  peerDependencies:
-    "@types/node": "*"
-  checksum: 453ef608677572276979a04a8de3d805cc8e1182d999f963e8b972e1aa95f76c7bcd542857bf7a62001d64583148049eb9866ea3eb34c8d0291770ccb8887018
+    "@types/node": "npm:*"
+    path-is-network-drive: "npm:^1.0.16"
+    path-strip-sep: "npm:^1.0.13"
+    tslib: "npm:^2"
+  checksum: 7e371a33d36fb841bbcfc056c5950bb3b72c0f7387f676d7edd2e6bebc4ad10ab5a5a6d887ec934c8ec272df138f7d3af1e89fc83ccb1ffa744cc53ec817c5db
   languageName: node
   linkType: hard
 
