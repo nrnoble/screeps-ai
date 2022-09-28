@@ -4,7 +4,10 @@
     {
       "label": "deploy:watch",
       "command": "yarn",
-      "args": ["deploy:private", "--watch"],
+      "args": [
+        "deploy:private",
+        "--watch"
+      ],
       "isBackground": true,
       "problemMatcher": {
         "owner": "typescript",
@@ -23,10 +26,18 @@
           "endsPattern": "created dist/main.js in.*"
         }
       },
+      "group": "build"
+    },
+    {
+      "type": "npm",
+      "script": "build",
       "group": {
         "kind": "build",
         "isDefault": true
-      }
+      },
+      "problemMatcher": [],
+      "label": "npm: build",
+      "detail": "rollup -c"
     }
   ]
 }
