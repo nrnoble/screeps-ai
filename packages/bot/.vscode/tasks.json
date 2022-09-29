@@ -38,6 +38,15 @@
       "problemMatcher": [],
       "label": "npm: build",
       "detail": "rollup -c"
+    },
+    {
+      "type": "typescript",
+      "tsconfig": "tsconfig.json",
+      "problemMatcher": [
+        "$tsc"
+      ],
+      "group": "build",
+      "label": "tsc: build - tsconfig.json"
     }
   ]
 }
